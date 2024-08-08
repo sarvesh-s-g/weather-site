@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.container{
+      background-color: yellow;
+      width: 400px;
+     height: min-content;
+     border-radius: 15px;
+     padding: 30px;
+}
+.searchbox{
+   
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.searchbox input{
+        width: 84%;
+        font-size: 20px;
+        text-transform: capitalize;
+        
+       
+        border-radius: 15px;
+        padding: 10px;
+}
+.searchbox input::placeholder{
+    color: black;
+    
+}
+.searchbox button{
+    width: 46px;
+    height: 46px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: larger;
+}
+.searchbox button:hover{
+    background-color: hsla(84, 98%, 41%, 0.776);
+   
+}
+.weatherbody img{
+    width: 60%;
+}
+.weatherbody{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+
+}
+.weatherbox{
+    margin-block: 20px;
+    text-align: center;
+}
+.weatherbox #temperature{
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+}
+.weatherbox #temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: bold;
+}
+.weatherbox #description {
+    font-size: 20px;
+    font-weight: 850px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.weatherdetails{
+     width: 100%;
+     display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+   
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.weatherdetails .text {
+    margin-left: 10px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text span{
+    font-weight: 750;
+}
+.locationnotfound{
+   
+    margin-top: 20px;
+    display: none;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.locationnotfound img {
+    width: 80%;
+}
+.locationnotfound h1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-bottom: 15px;
+    color: hsla(0, 0%, 0%, 0.685);
+}
